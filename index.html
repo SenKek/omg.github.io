@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Pets</title>
+    </head>
     <body>
 <header>
     <h1>Выберете вашего любимца</h1>
 </header>
+<main>
 <figure class="selected-character hidden">
     <img id="selected-character-img" src="" alt="Selected Character">
         <figcaption id="selected-character-description"></figcaption>
@@ -15,39 +18,39 @@
 </div>
 <div class="container">
     <div class="characterRow">
-        <div class="character" data-name="Собака" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/DogA.png?raw=true" data-description="Я — собака. Я люблю играть и бегать.">
-            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/dog.jpg?raw=true" alt="Пример изображения">
+        <div class="character" role="button" data-name="Собака" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/DogA.png?raw=true" data-description="Я — собака. Я люблю играть и бегать.">
+            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/dog.jpg?raw=true" alt="Собака">
             <div class="character-content">
-                <h3>Собака</h3>
+                <h2>Собака</h2>
                 <p>Я — собака</p>
             </div>
         </div>
-        <div class="character" data-name="Кот" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/CatA.png?raw=true" data-description="Я — кот. Я обожаю спать и есть рыбу.">
-            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/cat.jpg?raw=true" alt="Пример изображения">
+        <div class="character" role="button" data-name="Кот" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/CatA.png?raw=true" data-description="Я — кот. Я обожаю спать и есть рыбу.">
+            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/cat.jpg?raw=true" alt="Кот">
             <div class="character-content">
-                <h3>Кот</h3>
+                <h2>Кот</h2>
                 <p>Я — кот</p>
             </div>
         </div>
     </div>
     <div class="characterRow">
-        <div class="character" data-name="Панда" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/pandaA.png?raw=true" data-description="Я — панда. Я люблю бамбук и спать.">
-            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/panda.jpg?raw=true" alt="Пример изображения">
+        <div class="character" role="button" data-name="Панда" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/pandaA.png?raw=true" data-description="Я — панда. Я люблю бамбук и спать.">
+            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/panda.jpg?raw=true" alt="Панда">
             <div class="character-content">
-                <h3>Панда</h3>
+                <h2>Панда</h2>
                 <p>Я — панда</p>
             </div>
         </div>
-        <div class="character" data-name="Робот" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/RobotA.png?raw=true" data-description="Я — робот. Я создан для помощи и обучения.">
-            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/robot.jpg?raw=true" alt="Пример изображения">
+        <div class="character" role="button" data-name="Робот" data-img="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/RobotA.png?raw=true" data-description="Я — робот. Я создан для помощи и обучения.">
+            <img src="https://github.com/SenKek/pets.github.io/blob/main/docs/assets/robot.jpg?raw=true" alt="Робот">
             <div class="character-content">
-                <h3>Робот</h3>
+                <h2>Робот</h2>
                 <p>Я — робот</p>
             </div>
         </div>
     </div>
 </div>
-
+</main>
 <footer>
     <p>&copy; Сайт создан Вячеславом 2024 </p>
 </footer>
