@@ -52,11 +52,11 @@
         .character-content h2 {
             margin-top: 0;
             color: #2d3436; /* Dark color for good readability */
-            font-size: 4vw;
+            font-size: clamp(0.6em, 3.7dvw, 14rem);
         }
         .character-content p {
             color: #636e72; /* Lighter color for text */
-            font-size: 2.2vw;
+            font-size: clamp(0.5em, 2.26dvw, 12rem);
         }
         h2, p {
             text-align: center;
