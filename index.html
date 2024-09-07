@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<title>unckle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уникальный Дизайн</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #81ecec;
+        }
+        nav a {
+            color: #2d3436;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #00cec9;
+            color: white;
+        }
+        .container {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #6c5ce7;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-	<h1>JoJo is the best<h1>
-		<p>Yes to kakyoin</p>
+
+<header>
+    <h1>Добро пожаловать на наш сайт</h1>
+</header>
+
+<nav>
+    <a href="#">Главная</a>
+    <a href="#">О нас</a>
+    <a href="#">Услуги</a>
+    <a href="#">Контакты</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/1000x400" alt="Пример изображения">
+        <div class="card-content">
+            <h3>Заголовок карточки</h3>
+            <p>Это пример текста внутри карточки. Здесь можно разместить описание вашего контента.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/1000x400" alt="Пример изображения">
+        <div class="card-content">
+            <h3>Заголовок карточки</h3>
+            <p>Это пример текста внутри карточки. Здесь можно разместить описание вашего контента.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Уникальный дизайн. Все права защищены.</p>
+</footer>
+
 </body>
 </html>
