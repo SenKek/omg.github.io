@@ -31,6 +31,9 @@ nav a:hover {
             max-width: 1000px;
             margin: 0 auto;
         }
+img {
+           width: 1000px;
+           height: 400px;
 .card {
             background-color: white;
             border-radius: 10px;
@@ -38,7 +41,7 @@ nav a:hover {
             margin-bottom: 20px;
             overflow: hidden;
         }
-.card img {
+.card {
             width: 100%;
             height: auto;
         }
