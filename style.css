@@ -2,6 +2,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     background-attachment: fixed;
     transition: background 0.5s;
     color: #2d3436;
+    flex-grow: 1;
 }
 
 header {
@@ -31,7 +34,7 @@ header h1 {
     width: 60%;
     margin: auto;
     padding: 50px 0;
-    min-height: calc(100vh - 150px); /* Adjust height as per header and footer */
+    flex-grow: 1; /* Take remaining space */
 }
 
 .characterRow {
@@ -76,8 +79,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
+    position: relative; /* Ensure footer stays in the flow */
     bottom: 0;
 }
 
@@ -122,4 +125,5 @@ footer p {
         transform: scale(1);
     }
 }
+
 
