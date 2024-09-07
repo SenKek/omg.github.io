@@ -1,0 +1,34 @@
+  document.querySelectorAll('.character').forEach(card => {
+    card.addEventListener('click', () => {
+        const name = card.getAttribute('data-name');
+        const imgSrc = card.getAttribute('data-img'); // Get the new image source
+        const description = card.getAttribute('data-description');
+
+        // Update header and footer
+        document.querySelector('header').style.backgroundColor = '#2d3436';
+        document.querySelector('header h1').textContent = name;
+        document.querySelector('footer').style.backgroundColor = '#2d3436';
+        document.body.style.background = '#b2bec3';
+
+        // Hide all characters
+        document.querySelectorAll('.container').forEach(c => {
+            c.classList.add('hidden');
+        });
+
+        // Show selected character
+        const selectedCharacterDiv = document.querySelector('.selected-character');
+        document.getElementById('selected-character-img').src = imgSrc; // Update the selected character image
+        document.getElementById('selected-character-description').textContent = description;
+
+         // Remove all character elements
+        document.querySelectorAll('.container').forEach(c => {
+            c.remove();
+        });
+
+        // Add fade-in effect
+        selectedCharacterDiv.classList.remove('hidden');
+        setTimeout(() => {
+            selectedCharacterDiv.style.display = 'block';
+        }, 500);
+    });
+});
