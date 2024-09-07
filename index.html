@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Мой сайт</title>
-</head>
-<body>
-
+    <title>Pets</title>
+    <body>
 <header>
-    <div class = "head">
-        <h1>Добро пожаловать</h1>
-    </div>
-<nav>
-    <a href="#">Главная</a>
-    <a href="#">О нас</a>
-    <a href="#">Услуги</a>
-    <a href="#">Контакты</a>
-</nav>
-
+    <h1>Выберете вашего любимца</h1>
 </header>
+<figure class="selected-character hidden">
+    <img id="selected-character-img" src="" alt="Selected Character">
+        <figcaption id="selected-character-description"></figcaption>
+    </figure>
+</div>
 <div class="container">
-    <div class="card">
-        <img src="https://github.com/SenKek/omg.github.io/blob/main/docs/assets/dog.jpg?raw=true" alt="Пример изображения">
-        <div class="card-content">
-            <h3>Собака</h3>
-            <p>Текст</p>
+    <div class="characterRow">
+        <div class="character" data-name="Собака" data-img="dogA.png" data-description="Я — собака. Я люблю играть и бегать.">
+            <img src="dog.jpg" alt="Пример изображения">
+            <div class="character-content">
+                <h3>Собака</h3>
+                <p>Я — собака</p>
+            </div>
+        </div>
+        <div class="character" data-name="Кот" data-img="catA.png" data-description="Я — кот. Я обожаю спать и есть рыбу.">
+            <img src="cat.jpg" alt="Пример изображения">
+            <div class="character-content">
+                <h3>Кот</h3>
+                <p>Я — кот</p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="https://github.com/SenKek/omg.github.io/blob/main/docs/assets/cat.jpg?raw=true" alt="Пример изображения">
-        <div class="card-content">
-            <h3>Кот</h3>
-            <p>Текс</p>
+    <div class="characterRow">
+        <div class="character" data-name="Панда" data-img="pandaA.png" data-description="Я — панда. Я люблю бамбук и спать.">
+            <img src="panda.jpg" alt="Пример изображения">
+            <div class="character-content">
+                <h3>Панда</h3>
+                <p>Я — панда</p>
+            </div>
+        </div>
+        <div class="character" data-name="Робот" data-img="robotA.png" data-description="Я — робот. Я создан для помощи и обучения.">
+            <img src="robot.jpg" alt="Пример изображения">
+            <div class="character-content">
+                <h3>Робот</h3>
+                <p>Я — робот</p>
+            </div>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; Вячеслав 2024.</p>
+    <p>&copy; Сайт создан Вячеславом 2024 </p>
 </footer>
-
 </body>
 </html>
