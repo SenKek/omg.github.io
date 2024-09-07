@@ -51,11 +51,11 @@
         .character-content h2 {
             margin-top: 0;
             color: #2d3436; /* Dark color for good readability */
-            font-size: 1.5rem;
+            font-size: 1.5vw;
         }
         .character-content p {
             color: #636e72; /* Lighter color for text */
-            font-size: 1rem;
+            font-size: 1vw;
         }
         h2, p {
             text-align: center;
@@ -105,21 +105,3 @@
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
             }
-        @media (min-resolution: 120dpi) and (max-resolution: 200dpi) {
-
-        body, .character-content h2, .character-content p {
-            font-size: 30%;
-        }
-    }
-
-        @media (min-resolution: 200dpi) and (max-resolution: 300dpi) {
-        body, .character-content h2, .character-content p {
-            font-size: 50%;
-        }
-    }
-
-        @media (min-resolution: 300dpi) {
-        body, .character-content h2, .character-content p {
-            font-size: 80%;
-        }
-    }
